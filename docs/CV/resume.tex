@@ -1,0 +1,50 @@
+\documentclass[letter,10pt]{article}
+\usepackage[utf8]{inputenc}
+
+%====================
+% File:         resume.tex
+% Editor:       https://github.com/TimmyChan 
+%               https://www.linkedin.com/in/timmy-l-chan/
+% Last Updated: Jan 7th, 2022
+% Notes:        All formatting is done in TLCresume.sty
+%               No need to touch that file. 
+%               All actual content is in the sections/ folder.
+%====================
+
+\usepackage{TLCresume}
+
+%====================
+% CONTACT INFORMATION
+%====================
+\def\name{Fangzheng Liu} % Name Here
+
+\def\email{fzliu@mit.edu}
+% \def\github{Ironman-007} % github username
+
+\input{_header}
+\begin{document}
+
+\section{SUMMARY}
+\input{sections/summary}
+
+\section{EDUCATION}
+\input{sections/education}
+
+\section{ACADEMIC RESEARCH EXPERIENCE}
+\input{sections/experience}
+
+\newpage
+
+\section{PUBLICATIONS}
+\input{sections/publications}
+
+\section{AWARDS}
+\input{sections/awards}
+
+\section{TECHNICAL SKILLS}
+\input{sections/skills}
+
+\section{LEADERSHIP AND ACTIVITIES}
+\input{sections/activities}
+
+\end{document}
