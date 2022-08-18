@@ -18,9 +18,78 @@
 <div id="myMainnav" class="mainnav">
     <h1>Fangzheng Liu</h1>
 
-    <h2>LunarWSN</h2>
+    <h2>PCBPT</h2>
+    <center>
+        <p style="color:red;">
+            <b><i>With PCBPT, all you need to do is choose the signals you
+            want to measure and check the output.</i></b>
+        </p>
+    </center>
+
+    <center>
+        <img src="./images/PCBPT_machine copy.jpg" class="center" width = "32%">
+        <img src="./images/PCBPTplatform_install_pcb.jpg" class="center" width = "36.5%">
+        <img src="./images/pcbptresult.png" class="center" width = "29.3%">
+        <figcaption><b><i>PCBPT v1.0</i></b></figcaption>
+    </center></p>
+
     <p>
-        Hi! I'm a PhD student at Massachusetts Institute of Technology <a href=https://www.media.mit.edu/>Media Lab</a>. I'm studying in <a href=https://www.media.mit.edu/groups/responsive-environments/overview/>Responsive Environments group</a>, advised by <a href=http://paradiso.media.mit.edu>Prof. Joe Paradiso</a>
+        For many times, manual probing is the primary approach for debugging PCBs.
+        However, our hands may not be precise and stable enough to
+        accurately place the probes on pads without short circuiting
+        adjacent pins, which will cause more problems. On the
+        other hand, if multiple signals need to be tested, our hands may
+        not be enough. We could also use probe hook clips. However,
+        this often requires extension wires that are soldered on the
+        targeting pads.
     </p>
 
+    <p>
+        Another approach is using a bed-of-nails jig. To use the bed-of-nails,
+        a jig needs to be designed and made to install all pins. But
+        every jig is for only a single particular PCB design. Even a
+        tiny change of a single pin position requires designing and
+        making a new jig, which is poor time effective.
+    </p>
+
+    <center>
+        <img src="./images/pcbptbed_of_nail.png" class="center" width = "40%">
+        <figcaption><b><i>Bed-of-nails jig.</i></b></figcaption>
+    </center></p>
+
+    <p>
+        Flying probe tester is also an option.
+        It is precise and fast and can provide efficient diagnostics
+        for different PCB designs. However, commercial flying probe
+        tester products are very expensive and massive, which are not
+        suitable for hobbyists and small companies.
+    </p>
+
+    <center>
+        <img src="./images/PCBPT_flying_probe.png" class="center" width = "40%">
+        <figcaption><b><i>Flying probe tester.</i></b></figcaption>
+    </center></p>
+
+    <p>
+        Here we present the PCB Probe Tester (PCBPT), a PCB automatic probing
+        tool that helps with your debugging.
+        It's composed of a miniature probing machine you can put on your desk
+        and a control program run in PC.
+        The program will parse the board design file created in Eagle,
+        and list all the signals you can measure in the design.
+        After you choose the signals you want to measure,
+        the program will choose the proper pads (according to size, and if the pads are
+        ICs pads) for the signals and calculate their coordinates, then the machine will
+        place the probes on the pads selected.
+
+        This is a new way for the hardware designers to interact with their designs.
+    </p>
+
+    <center>
+    <iframe src="https://player.vimeo.com/video/428300322?h=7ebed5e763" width="990" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    </center></p>
+
+    <p>
+        Now I'm developing the second version, and it coming soon ...
+    </p>
 </div>
