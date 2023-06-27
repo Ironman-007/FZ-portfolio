@@ -1,0 +1,177 @@
+<html>
+<head>
+    <title>Fangzheng Liu (MIT)</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <meta name="viewport" content="width=1035px, initial-scale=1.0">
+</head>
+
+<style>
+    table, th, td {
+      border:1px solid black;
+    }
+</style>
+
+<body>
+
+<div id="mySidenav" class="sidenav">
+    <p><span class = "weeknum"><a href=index.html>Home</a> </span></p>
+    <p><span class = "weeknum"><a href=projects.html>Research</a> </span></p>
+    <p><span class = "weeknum"><a href=publications.html>Publications</a> </span></p>
+    <p><span class = "weeknum"><a href=teachings.html>Teachings</a> </span></p>
+    <!-- <p><span class = "weeknum"><a href=readings.html>Readings & Links</a> </span></p> -->
+    <p><span class = "weeknum"><a href=cv.html>CV</a> </span></p>
+</div>
+
+<div id="myMainnav" class="mainnav">
+    <h1>Fangzheng Liu</h1>
+
+    <h2>LunarWSN (<a href=https://digitalcommons.usu.edu/smallsat/2022/all2022/220/>Paper</a>)</h2>
+
+    <center><h3><i>Overview</i></h3></center>
+    <p> We present a fully functional cubic sensor node prototype designed
+        to be ballistically deployed from a rover or lander to regions of
+        interest that might be unsafe or impractical for rovers or landers to reach.
+        Unlike helicopters or drones, this system can be deployed in airless environments.
+        Crucially, the nodes are equipped with wireless ranging and wireless communications
+        capabilities, such that each node can be localized by leveraging wireless ranging
+        with triangulation, and a cluster of deployed nodes form an expandable WSN
+        (Wireless Sensor Network), that we term LunarWSN.
+        The hardware redundancy of the network can reduce the chance of failure.
+        Each node is a light (less than 170g),
+        miniaturized (5cm x 5cm x 5cm), modular design,
+        that allows sensor payloads to be customized to
+        different scientific missions. As a representative case study,
+        the node described in this paper is equipped with an impedance
+        sensor designed to measure the permittivity of the lunar soil,
+        which infers water content. With the help of LunarWSN, more in
+        situ measurement results can be obtained to acquire meter-scale-resolution knowledge
+        of lunar resource distribution and dynamic phenomena.
+    </p>
+
+    <center>
+        <img src="./images/node.jpeg" class="center" height="320px">
+        <img src="./images/Node2.jpg" class="center" height="320px">
+        <figcaption><i>(a) A LunarWSN sensor node; (b) Rendering of ballistically deployment of the
+            sensor nodes to Lunar surface</i></figcaption>
+    </center></p>
+
+    <center><h3><i>Design</i></h3></center>
+    <p> Each sensor node is an omni-directional design, and has wireless communication antenna,
+        wireless ranging antenna, sensor probes, and solar panels on each side of the node.
+        No matter what landing gesture is, each node can always have wireless connection with
+        other nodes and can harvest energy from the sunlight.
+    </p>
+
+    <center>
+        <img src="./images/omni_node.png" class="center" width="70%">
+        <figcaption><i>Omni-directional design of the sensor node.</i></figcaption>
+    </center></p>
+
+    <center>
+        <img src="./images/lunarwsn_inside.png" class="center" width="70%">
+        <figcaption><i>Inside of the sensor node is a stack of different modules.</i></figcaption>
+    </center></p>
+
+    <center><figcaption><i>Description of each module (all modules are custom designed).</i></figcaption></center>
+    <table style="width:100%">
+        <tr>
+            <th>Module</th>
+            <th>Functions</th>
+            <th>Design</th>
+        </tr>
+        <tr>
+            <td>Antenna switch module</td>
+            <td>Choosing the antennas which can provide the best radio
+                connection for wireless communication and wireless ranging </td>
+            <td>Including two SP6T (single pole, six-throw) RF switches
+                (SKY13416-485LF, Skyworks) for both wireless communication
+                and wireless ranging. The RF switches are controlled by the MCU module.</td>
+        </tr>
+        <tr>
+            <td>Main Control Unit (MCU) module </td>
+            <td>Performing the wireless communication, wireless ranging,
+                and controls other modules through different interfaces (GPIO, I2C, and SPI). </td>
+            <td>The main controller IC is a nRF52832 (Nordic). An UWB (Ultra-Wide Band)
+                radio IC (DW1000, decaWave) is used for wireless ranging, and a 2.4GHz IC
+                (nRF24L01+, Nordic) is used to realize wireless communication. </td>
+        </tr>
+        <tr>
+            <td>Sensor module</td>
+            <td>Performing main sensing mission. Can be tailored by different mission requirements.</td>
+            <td>The current sensor module we designed is composed of an impedance convertor IC
+                (AD5933, Analog Devices) and two SP6T circuits. Each SP6T circuit is made
+                up of a SPDT (single pole, double-throw) analog switch
+                (ADG849, Analog Devices) and a SP3T (single pole, three-throw)
+                analog switch (TS5A3359DCUT, Texas Instrument).
+                The SP6T is controlled by the MCU module and selects which node face to use for sensing. </td>
+        </tr>
+        <tr>
+            <td>SlowControl module </td>
+            <td>Collecting housekeeping data indicates the node's status,
+                including temperature (through thermistors), battery voltage,
+                landing posture, etc.</td>
+            <td>Including a fourchannel low-power low speed ADC (ADS1115, Texas Instruments),
+                a COTS IMU (Inertial Measurement Unit) module (LSM9DS1 module, Sparkfun).
+                Also including a connector for programming and debugging. </td>
+        </tr>
+        <tr>
+            <td>Power module & Battery </td>
+            <td>Harvesting and storing energy.</td>
+            <td>A MPPT (maximum power point tracker, AD5091, Analog Devices)
+                for energy harvesting, and a 1400mAh LiPo battery. </td>
+        </tr>
+        <tr>
+            <td>Node face </td>
+            <td>Six faces on each node. Providing surface for installing antennas,
+                sensor probes, solar panels, and other components that need
+                to be exposed to the external environment. </td>
+            <td>Each face has a 2.4GHz chip antenna (A5839, Antenova)
+                for wireless communication, an UWB chip antenna (AH086M555003-T, Taiyo Yuden)
+                for wireless ranging, three solar panels (KXOB25_05X3F, ANYSOLAR)
+                for energy harvesting, and a pair of sensor probes for injecting
+                sweeping-frequency AC signal into the MUT (material under test). </td>
+        </tr>
+    </table>
+    </p>
+
+    <center>
+        <img src="./images/lunarwsnnodestructure.png" class="center" height="600px">
+        <figcaption><i>Hardware structure of the LunarWSN sensor node.</i></figcaption>
+    </center></p>
+
+    <center>
+        <img src="./images/systemstructure.png" class="center" height="300px">
+        <figcaption><i>System structure of the LunarWSN.</i></figcaption>
+    </center></p>
+
+    <center><h3><i>Performance (Tested in a indoor Lab environment)</i></h3></center>
+    <h4><i>Energy harvesting</i></h4>
+        <p>The solar power harvested is at least 18mW.</p>
+    
+    <h4><i>Wireless communication</i></h4>
+        <p>Communication range is 7.5~8m.</p>
+
+    <h4><i>Wireless localization</i></h4>
+        <p>0.49m (max X error); 0.69m (max Y error).</p>
+        <center>
+            <img src="./images/lunarwsnlocalization.png" class="center" height="400px">
+            <figcaption><i>Wireless localization test result.</i></figcaption>
+        </center></p>
+
+    <h4><i>Water content detection (Type II pure water with Lunar soil simulant)</i></h4>
+        <p>The absolute impedance drops rapidly with even less than 1% of water added.
+            The real relative permittivity increases more progressively as the water content gets higher.</p>
+        <center>
+            <img src="./images/lunarwsnwater.png" class="center" height="300px">
+            <figcaption><i>Water content detection results.</i></figcaption>
+        </center></p>
+
+    <p>This work is published on the SmallSat conference 2022.</p>
+
+    <center>
+        <img src="./images/me_smallsat.jpg" class="center" height="400px">
+        <figcaption><i>SmallSat conference 2022.</i></figcaption>
+    </center></p>
+</div>
+
+
