@@ -2,6 +2,7 @@
 <head>
     <title>Fangzheng Liu (MIT)</title>
     <link rel="stylesheet" href="./stylesheets/style.css">
+    <script src="./stylesheets/code.module.css"></script>
     <meta name="viewport" content="width=1035px, initial-scale=1.0">
 </head>
 <body>
@@ -47,7 +48,7 @@
 
     <p>Here is the Arduino code for calibration and detection:</p>
 
-    <code>
+    <div id="box">
         #include <Adafruit_NeoPixel.h>
 
         int Power = 11;
@@ -155,7 +156,7 @@
           flash_b = sense_touch(D2, cali_3, c3); flash_RGB(flash_b);
         }
 
-    </code>
+    </div>
 
     <p>
         <center>

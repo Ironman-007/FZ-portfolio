@@ -1,0 +1,36 @@
+.pre {
+  text-align: left;
+  margin: 1em 0;
+  padding: 0.8em;
+  overflow: scroll;
+}
+.pre :global(.token-line) {
+  line-height: 1.1em;
+  height: 1.1em;
+}
+.pre :global(.token-line) * {
+  font-family: monospace !important;
+}
+.pre code {
+  display: table-row;
+}
+.pre code .lineNo {
+  display: table-cell;
+  text-align: right;
+  padding-right: 1em;
+  user-select: none;
+  opacity: 0.5;
+}
+.pre code .lineContent {
+  display: table-cell;
+}
+
+.inlinecode {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.2rem;
+  margin: 0;
+}
+.inlinecode :global(.token-line) * {
+  font-family: monospace !important;
+}
