@@ -17,72 +17,28 @@
 
 <div id="myMainnav" class="mainnav">
     <h2>Any anlog pin is a capacitive sensor</h2>
-    <center>
-        <b><i>Without any external components or capacitive sensor periperal, any analog pin can serve as a capacitive sensor and you can use it for touch pad or so. :).</i></b>
-    </center>
+    <p>
+        <center>
+            <b><i>Without any external components or capacitive sensor periperal, any analog pin can serve as a capacitive sensor and you can use it for touch pad or so. :).</i></b>
+        </center>
+    </p>
 
-    </b>
-    <center>
-        <img src="./images/io_touch.jpg" class="center" width = "40%">
-        <figcaption><b><i>RP2040 XIAO module with three touch pads connected with the analog pins and control the RGB LED.</i></b></figcaption>
-    </center></p>
-    </b>
+    <p>
+        <center>
+            <img src="./images/io_touch.jpg" class="center" width = "40%">
+            <figcaption><b><i>RP2040 XIAO module with three touch pads connected with the analog pins and control the RGB LED.</i></b></figcaption>
+        </center>
+    </p>
 
-    <center>
+    <p>
         The touch pad that conencts with an analog pin forms a capacitor, and the anlog pin outputs a very short pulse to charge the capacitor. Then the pin turns to analog input, which has big input resistance, and the capacitor discharges slowly through this big resistance.
-    </center></p>
-
-    <p>
-        Manual probing is the primary approach for debugging PCBs.
-        However, our hands may not be precise and stable enough to
-        accurately place the probes on pads without short circuiting
-        adjacent pins, which will cause more problems. On the
-        other hand, if multiple signals need to be tested, our hands may
-        not be enough. We could also use probe hook clips. However,
-        this often requires extension wires that are soldered on the
-        targeting pads.
     </p>
 
-    <p>
-        Another approach is using a bed-of-nails jig. To use the bed-of-nails,
-        a jig needs to be designed and made to install all pins. But
-        every jig is for only a single particular PCB design. Even a
-        tiny change of a single pin position requires designing and
-        making a new jig, which is poor time effective.
-    </p>
 
     <center>
         <img src="./images/pcbptbed_of_nail.png" class="center" width = "40%">
         <figcaption><b><i>Bed-of-nails jig.</i></b></figcaption>
     </center></p>
-
-    <p>
-        Flying probe tester is also an option.
-        It is precise and fast and can provide efficient diagnostics
-        for different PCB designs. However, commercial flying probe
-        tester products are very expensive and massive, which are not
-        suitable for hobbyists and small companies.
-    </p>
-
-    <center>
-        <img src="./images/PCBPT_flying_probe.png" class="center" width = "40%">
-        <figcaption><b><i>Flying probe tester.</i></b></figcaption>
-    </center></p>
-
-    <p>
-        Here we present the PCB Probe Tester (PCBPT), a PCB automatic probing
-        tool that helps with your debugging.
-        It's composed of a miniature probing machine you can put on your desk
-        and a control program run in PC.
-        The program will parse the board design file created in Eagle,
-        and list all the signals you can measure in the design.
-        After you choose the signals you want to measure,
-        the program will choose the proper pads (according to size, and if the pads are
-        ICs pads) for the signals and calculate their coordinates, then the machine will
-        place the probes on the pads selected.
-
-        This is a new way for the hardware designers to interact with their designs.
-    </p>
 
     <center>
         <iframe src="https://player.vimeo.com/video/428300322?h=7ebed5e763"
