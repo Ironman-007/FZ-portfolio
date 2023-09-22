@@ -108,11 +108,14 @@ th {
 }
 
 .codebox {
-  display: block; 
+  display: block;
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
   padding: 3px 3px 2px; 
   text-align: left;
   height: 600px;
   width: 100%;
-  background-color: #AFEEEE;
+  background-color: LightGray;
   overflow: auto;
 }
