@@ -16,18 +16,27 @@
 </div>
 
 <div id="myMainnav" class="mainnav">
-    <h2>Any analog pin is a capacitive sensor</h2>
+    <h2>IO_touch: every IO pin is a capacitive sensor</h2>
     <p>
-        <center>
-            <b><i>Without any external components or capacitive sensor periperal, any analog pin can serve as a capacitive sensor and you can use it for touch pad or so. :)</i></b>
-        </center>
+      Without any external components or capacitive sensor periperal,
+      any IO pin can serve as a capacitive sensor and you can use it for touch pad or so. :)
     </p>
 
     <p>
-        <center>
-            <img src="./images/io_touch.jpg" class="center" width = "60%">
-            <figcaption><i>RP2040 XIAO module with three touch pads connected with the analog pins and control the RGB LED.</i></figcaption>
-        </center>
+      <center>
+          <img src="./images/io_touch_ad.jpg" class="center" width = "50%"></img>
+          <br><br>
+          <figcaption style="font-size:16px;"><i>An RP2040 XIAO module with six touch
+            pads. Three round ones are connected with the analog pins
+            and three square ones are connected with digital pins.
+            Touch pads can control the RGB LED.</i></figcaption>
+      </center>
+  </p>
+
+    <p>
+      <center>
+        <b style="color:red;"><i>Analog pins</i></b>
+      </center>
     </p>
 
     <p>
@@ -36,8 +45,9 @@
 
     <p>
         <center>
-            <img src="./images/discharge_change_process.gif" class="center" width = "60%">
-            <figcaption><b><i>Discharging process changes when finger touches.</i></b></figcaption>
+            <img src="./images/discharge_change_process.gif" class="center" width = "80%">
+            <br><br>
+            <figcaption style="font-size:16px;"><i>Discharging process changes when finger touches.</i></figcaption>
         </center>
     </p>
 
@@ -45,12 +55,12 @@
         By taking a measurement at a fixed time point after the pulse, we can detect the change in dicharge and ditect touch.
     </p>
 
-    <p>Here is the Arduino code for calibration and detection:</p>
+    <p>Here is the Arduino code for analog pins:</p>
 
     <center>
         <pre class = "codebox">
             
-    #include "Adafruit_NeoPixel.h"
+    #include &#60;Adafruit_NeoPixel.h&#62;
 
     int Power = 11;
     int PIN  = 12;
@@ -162,13 +172,78 @@
     <p>
         <center>
             <iframe src="./images/io_touch.mp4"
-            width= "65%" height="400" frameborder="0" allow="autoplay;
-            fullscreen; picture-in-picture" allowfullscreen></iframe>
+            width= "80%" height="442" frameborder="0" controls muted allowfullscreen></iframe>
+            <br><br>
+            <figcaption style="font-size:16px;"><i>Control RGB LED through analog pin touchpads.</i></figcaption>
         </center>
     </p>
 
+<!----------------------- Digital pins --------------------------->
     <p>
-        <i> With this approach, theoretically, any analog pin could serve as a capacitive sensor. Actually, using a digital pin may work, too. As the discharging process get longer, if we start a timer right after the pulse output and record the time length till the digital input gets to low, we can also realize a capacitive sensing. I will leave this for future work (the program might need soem filtering to lower the impact from the 60Hz noise). </i>
+      <center>
+          <b style="color:blue;"><i>Digital pins</i></b>
+      </center>
     </p>
+
+    <p>
+      The mechanism for digital pins is similar. When touching the pad, capacitance changes and discharging
+      process changes. However, digital pins are not connected with the internal ADC therefore can not measure
+      this change through sampling the voltage at a fixed moment.
+    </p>
+
+    <p>
+        <center>
+            <img src="./images/discharge_change_process_ad.gif" class="center" width = "80%">
+            <br><br>
+            <figcaption style="font-size:16px;"><i>Discharging process changes when finger touches.</i></figcaption>
+        </center>
+    </p>
+    
+    <p>
+      <i style="color:red;">Note: the discharging time for digital pins are shorter since
+        by default, if an RP2040 IO is configured to input, the pull down resistor is enabled, and
+        this pull down resistor must be smaller than the input resistance of the internal ADC.
+        So the capacitor discharges much faster.
+      </i>
+    </p>
+
+    <p>
+      The approach I'm using for digital pins is: when touching the pad, the discharge gets slower,
+      therefore the falling edge arrives later. So I record the timestamp when the pulse outputs,
+      and set the digital IO to input and attach to an interruption with it which is triggered
+      by falling edge. The interruption routine record the timestamp and calculate the time difference
+      between the trigger time and pulse output time. The time difference with a finger touch is longer
+      than the one without (although it's only a few microseconds, but already enough to capture).
+    </p>
+
+    <p>
+      <center>
+          <img src="./images/digital_discharge_change.gif" class="center" width = "80%">
+          <br><br>
+          <figcaption style="font-size:16px;"><i>Discharging process changes when finger touches,
+            and the time difference changes, too.</i></figcaption>
+      </center>
+  </p>
+
+  <p>Here are the final source code with both analog and digital pins work:</p>
+  <a href="./files/io_touch/main.cpp">main.c</a><br>
+  <a href="./files/io_touch/XIAO2PICO_PIN_MAP.h">XIAO2PICO_PIN_MAP.h</a><br>
+  <a href="./files/io_touch/XIAO2PICO_PIN_MAP.h">platformio.ini</a><br>
+  <p>
+    <i style="color:red;">Note: I use VSCode + PlatformIO.
+    </i>
+  </p>
+
+  <p>
+      <center>
+          <iframe src="./images/io_touch_final.mp4"
+          width= "80%" height="442" frameborder="0" controls muted allowfullscreen></iframe>
+      </center>
+  </p>
+
+  <p>
+    <i> With this approach, theoretically,
+      any IO pin of almost all MCUs could serve as a capacitive sensor.</i>
+  </p>
 
 </div>
