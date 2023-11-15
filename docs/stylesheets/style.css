@@ -88,7 +88,7 @@ th {
 }
 
 .gallery:hover {
-  border: 1px solid #777;
+  border: 2px solid #777;
 }
 
 .gallery img {
