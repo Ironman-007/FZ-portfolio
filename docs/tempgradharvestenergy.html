@@ -43,35 +43,126 @@
     side is much higher than the shadowed side due to the lack of an atmosphere
     to block solar irradiation in the sunlit areas and trap heat in the shadowed areas.
     This can form a large temperature gradient on the sensor node surface.
-    We studied this in-situ energy harvesting approach by using a
+    I studied this in-situ energy harvesting approach by using a
     custom thermopile that leveraged the temperature gradient between the sunlit
     and shadowed sides of the sensor node's body.
     </p>
 
+    I designed this wireless sensor node,
+    named <a href=hexsense.html>HexSense</a>, that can ballistically deployed from
+    a rover or lander to the Lunar surface.
+    After deployed and the HexSense landed, it will automatically stand up and start working.</p>
+
     <center>
         <img src="./images/hexsense_node1.jpg" class="center" height="250px">
-        <img src="./images/hexsense.jpeg" class="center" height="250px">
+        <img src="./images/hexsense.gif" class="center" height="250px">
         <figcaption><i> A HexSense sensor node</i></figcaption>
     </center></p>
 
-    After deployed and the HexSense landed, it will automatically stand up and start working.
-    <center>
-        <video width="500" controls>
-            <source src="./images/hexsense_automatic_standup.mp4" type="video/mp4">
-        </video>
-    </center>
-    <p>HexSense automatically standup after landed on the Lunar surface.</p>
+    <p> When working on the moon,
+        after the HexSense node starts working, one side will be facing the sunlight,
+        and the opposite will be in shadow. The temperature on the sunlit side is much
+        higher than the shadowed side. This will form a great temperature
+        gradient across the surface of the HexSense node. A thermopile can be used to
+        harvest energy from this temperature gradient.
+    </p>
 
-    <center><h3><i>Design</i></h3></center>
+    <center><h3><i>Simulation</i></h3></center>
     <p>
-        The work is still in progress, and in the July of 2023, one HexSense node will be
-        deployed to Svalbard in the Arctic area and collect environmental data for 10 days.
+        I set the position of the sensor node at a high latitude on the moon
+        since the Lunar polar regions are of great interest for future exploration.
+        In polar regions, solar irradiation has a big angle of incidence,
+        which means the sunlight is always low on the horizon,
+        therefore the Lunar surface temperature is low. However,
+        as the node is vertical to the Lunar surface,
+        the solar irradiation is almost perpendicular to the surface of the node,
+        which can efficiently heat the sunlit side of the node.
     </p>
 
     <center>
-        <img src="./images/hexsense_in_svalbard.jpg" class="center" height="400px">
-        <figcaption><i> HexSense sensor node deployed in Svalbard!!!</i></figcaption>
+        <img src="./images/hexsense_solar_irradiance_condition.png" class="center" height="250px">
+        <figcaption><i> Schematic diagram of the Lunar surface solar irradiance condition.</i></figcaption>
     </center></p>
+
+    In the simulation, the thermal environment of the sensor node is set as follows:</p>
+
+    <center>
+        <img src="./images/hexsense_simulation_condition.png" class="center" height="250px">
+        <figcaption><i> The thermal environment the sensor node is in on Lunar surface.</i></figcaption>
+    </center></p>
+
+    The simulation results are as follows:</p>
+    <center>
+        <img src="./images/hexsense_simulation_result.png" class="center" height="300px">
+        <figcaption><i> Thermal simulation result of the sensor node on the Lunar surface.</i></figcaption>
+    </center></p>
+
+    The result shows that the temperature difference between the sunlit side and the shadowed side
+    can reach over 150 &degC.</p>
+
+    <center><h3><i>Energy harvesting system design</i></h3></center>
+    To harvest the energy from the great temperature difference,
+    A custom designed thermopile is used. The energy harvesting system diagram
+    is as follows:</p>
+
+    <center>
+        <img src="./images/hexsenseenergyharvestingsubsys.png" class="center" height="220px">
+        <img src="./images/hexsensethermopile.jpg" class="center" height="220px">
+        <img src="./images/hexsensethermopileinnode.jpg" class="center" height="220px">
+        <figcaption><i>Energy harvesting subsystem diagram (left) the custom-made thermopile (right).</i></figcaption>
+    </center></p>
+
+    A lab experiment was conducted to test the temperature gradient formation,
+    and the results are as follows:</p>
+    <center>
+        <img src="./images/hexsense_solar_illuminator_setup.jpg" class="center" height="300px">
+        <img src="./images/hexsense_solar_temp_diff.png" class="center" height="320px">
+        <figcaption><i>Lab experiment setup with a solar light illuminator (left)
+            The temperature changes on the lit side and the shadowed side (right).
+        </i></figcaption>
+    </center></p>
+
+    In the lab test, a 50 &degC temperature difference was achieved.
+    As the lab experiment is limited, so it didn't get a 
+    temperature difference as big as the simulation results. </p>
+
+    The open circuit voltage (OCV) of the thermopile is shown as follows:</p>
+    <center>
+        <img src="./images/hexsense_solar_temp_diff_OCV.png" class="center" height="350px">
+        <figcaption><i>The temperature difference and the open-circuit output voltage.</i></figcaption>
+    </center></p>
+
+    To harvest the energy from the temperature difference, a custom-designed
+    energy harvesting circuit based on
+    <a href=https://www.analog.com/en/products/ltc3108.html>LTC3108</a> was used,
+    as shown below:</p>
+
+    <center>
+        <img src="./images/hexsense_ltc3108_board.jpg" class="center" height="300px">
+        <figcaption><i>Custom-designed energy harvesting circuit.</i></figcaption>
+    </center></p>
+
+    However, as the input resistance of the LTC3108 is too low,
+    which will reduce the thermopile output voltage when connected to the thermopile,
+    a higher temperature difference is needed.
+    To achieve this bigger temperature difference,
+    two flexible heaters are used to heat the sunlit side of the sensor node.
+    </p>
+
+    <center>
+        <img src="./images/hexsense_heater_setup.jpg" class="center" height="350px">
+        <img src="./images/hexsense_heater_data.png" class="center" height="350px">
+        <figcaption><i>Two flexible heaters are attached to the node
+            side where the thermopile hot joints are attached (left)
+            result from the experiment with heaters
+            attached to the hot joint side (right).</i></figcaption>
+    </center></p>
+
+    The results show the energy harvesting circuit is successfully triggered
+    and started to harvest and store energy in an electrolytic capacitor.</p>
+
+    The performance of our approach and solar cells is also compared.
+    Please read the paper for more details.</p>
 
 </div>
 
