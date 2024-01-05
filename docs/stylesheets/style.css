@@ -112,7 +112,25 @@ th {
   border: 1px solid #777;
   text-align: left;
   height: 400px;
-  width: 80%;
+  width: 100%;
   background-color: #F5F5DC;
   overflow: auto;
+}
+
+.codebox_small {
+/*  display: block;*/
+  border: 1px solid #777;
+  text-align: left;
+  height: 150px;
+  width: 100%;
+  background-color: #F5F5DC;
+  overflow: auto;
+}
+
+code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
 }
