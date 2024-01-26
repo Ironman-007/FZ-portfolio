@@ -1,0 +1,110 @@
+<html>
+<head>
+    <title>Fangzheng Liu (MIT)</title>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <meta name="viewport" content="width=1035px, initial-scale=1.0">
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+    <p><span class = "weeknum"><a href=../index.html>Home</a> </span></p>
+    <p><span class = "weeknum"><a href=../projects.html>Projects</a> </span></p>
+    <p><span class = "weeknum"><a href=../publications.html>Publications&Media</a> </span></p>
+    <p><span class = "weeknum"><a href=../teachings.html>Teachings</a> </span></p>
+    <!-- <p><span class = "weeknum"><a href=readings.html>Readings & Links</a> </span></p> -->
+    <p><span class = "weeknum"><a href=../articles.html>Articles</a> </span></p>
+    <p><span class = "weeknum"><a href=../cv.html>CV</a> </span></p>
+</div>
+
+<div id="myMainnav" class="mainnav">
+    <h1>Fangzheng Liu</h1>
+
+    <h3>Why all SAMD21 Arduino boards only have one 32.768KHz Crystal?</h3>
+
+    <p>
+        I used STM32 MCU before. All the chips I used have internal oscillators
+        to offer clock for CPU and peripherals. They can also be clocked through external crystals/oscillators.
+        Normally there should be one 32.768KHz crystal to offer clock for RTC and some other peripherals have no
+        high-frequency clock requirement, and a few-MHz crystal to offer clock for CPU and other components.
+    </p>
+
+    <p>
+        Then I turned to SAMD21 MCU. I found that all the Arduino boards based on SAMD21 only have one 32.768KHz crystal.
+        I read the datasheet and found that SAMD21 can also has an external MHz crystal to offer clock for CPU.
+        So I was wondering why all the Arduino boards only have one 32.768KHz crystal.
+    </p>
+
+    <p>
+        Then I read the CLK part of the SADM21, and I found it was a little bit confusing at first since
+        it's flexible and can be configured in many ways. Finally, I figured out how it works.
+    </p>
+
+    <p>
+        Then turned to Arduino source code. There is a function that's called
+        after reset before the <code>setup()</code> and <code>loop()</code> function. It's called
+        <code>systemInint()</code>, in <code>.../.platformio/packages/framework-arduino-samd-adafruit/cores/arduino/startup.cpp</code>.
+    </p>
+
+    <p>
+    here is the part of the code comments that defines the clock configuration in Arduino framework:
+    <pre class = "codebox">
+
+    //********************** SAMD21 *********************//
+
+    /**
+    * \brief SystemInit() configures the needed clocks and according Flash Read Wait States.
+    * At reset:
+    * - OSC8M clock source is enabled with a divider by 8 (1MHz).
+    * - Generic Clock Generator 0 (GCLKMAIN) is using OSC8M as source.
+    * We need to:
+    * 1) Enable XOSC32K clock (External on-board 32.768Hz oscillator), will be used as DFLL48M reference.
+    * 2) Put XOSC32K as source of Generic Clock Generator 1
+    * 3) Put Generic Clock Generator 1 as source for Generic Clock Multiplexer 0 (DFLL48M reference)
+    * 4) Enable DFLL48M clock
+    * 5) Switch Generic Clock Generator 0 to DFLL48M. CPU will run at 48MHz.
+    * 6) Modify PRESCaler value of OSCM to have 8MHz
+    * 7) Put OSC8M as source for Generic Clock Generator 3
+    */
+    </pre>
+
+    Now I understand why there must be a 32.768KHz crystal and there is only one crystal.
+    Also this means I can have a sperate MHz crystal to offer clock for CPU and other components,
+    but, why bother...
+
+    </p>
+
+    <p>And here is how the clock is configured:</p>
+    <!-- insert the arduino_samd21_clk_structure image here -->
+    <center><p><img src="../images/arduino_samd21_clk_structure.png" alt="arduino_samd21_clk_structure" width="70%"></p></center>
+
+    </p>
+
+    <p>
+        In the <code>systemInit()</code>, in the DFLL48M frequency up conversion part,
+        when setting the multiply factor, the code is like this:
+        <p>
+        <pre class = "codebox_small">
+
+    SYSCTRL->DFLLMUL.reg = SYSCTRL_DFLLMUL_CSTEP( 31 ) | // Coarse step is 31, half of the max value
+    SYSCTRL_DFLLMUL_FSTEP( 511 ) | // Fine step is 511, half of the max value
+    SYSCTRL_DFLLMUL_MUL( (VARIANT_MCK + VARIANT_MAINOSC/2) / VARIANT_MAINOSC ) ; // External 32KHz is the reference
+        </pre>
+
+        </p>
+        where VARIANT_MCK = 48000000, and VARIANT_MAINOSC = 32768. At first I didn't understand why need to
+        add VARIANT_MAINOSC/2 to VARIANT_MCK. Then ChatGPT gave me the answer:
+        <code>
+            The VARIANT_MAINOSC/2 term is added to the target frequency before dividing by VARIANT_MAINOSC.
+            This addition is likely included to round the result to the nearest integer when performing the division.
+            The addition of half the oscillator frequency is a common technique to perform a more accurate rounding
+            when converting a real number to an integer.
+        </code>
+
+    <p></p>
+    <p></p>
+    <p></p>
+
+</div>
+
+</body>
+</html>
