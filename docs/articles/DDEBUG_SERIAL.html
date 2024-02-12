@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Fangzheng Liu (MIT)</title>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <meta name="viewport" content="width=1035px, initial-scale=1.0">
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+    <p><span class = "weeknum"><a href=../index.html>Home</a> </span></p>
+    <p><span class = "weeknum"><a href=../projects.html>Projects</a> </span></p>
+    <p><span class = "weeknum"><a href=../publications.html>Publications&Media</a> </span></p>
+    <p><span class = "weeknum"><a href=../teachings.html>Teachings</a> </span></p>
+    <!-- <p><span class = "weeknum"><a href=readings.html>Readings & Links</a> </span></p> -->
+    <p><span class = "weeknum"><a href=../articles.html>Articles</a> </span></p>
+    <p><span class = "weeknum"><a href=../cv.html>CV</a> </span></p>
+</div>
+
+<div id="myMainnav" class="mainnav">
+    <h1>Fangzheng Liu</h1>
+
+    I normally use VSCode with PlatformIO to develop Arduino.
+    When developing feather M0 board with ATSADM21G18, remember to use
+    "build_flags = -DDEBUG_SERIAL" in platform.ini. So the "Serial" will only be the USB
+    port, and you can use the "#PIN_SERIAL_RX" and "PIN_SERIAL_TX" as noraml GPIO to control
+    other things.
+
+    Without using this, the "Serial.print" will output to both of the USB and the UART port. Which will mess up the other logic if you are using the UART pins as GPIO.
+
+    "build_flags = -DUSE_TINYUSB" seems work, too.
+
+</body>
+</html>

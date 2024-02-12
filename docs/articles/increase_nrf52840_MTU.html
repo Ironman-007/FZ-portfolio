@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Fangzheng Liu (MIT)</title>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <meta name="viewport" content="width=1035px, initial-scale=1.0">
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+    <p><span class = "weeknum"><a href=../index.html>Home</a> </span></p>
+    <p><span class = "weeknum"><a href=../projects.html>Projects</a> </span></p>
+    <p><span class = "weeknum"><a href=../publications.html>Publications&Media</a> </span></p>
+    <p><span class = "weeknum"><a href=../teachings.html>Teachings</a> </span></p>
+    <!-- <p><span class = "weeknum"><a href=readings.html>Readings & Links</a> </span></p> -->
+    <p><span class = "weeknum"><a href=../articles.html>Articles</a> </span></p>
+    <p><span class = "weeknum"><a href=../cv.html>CV</a> </span></p>
+</div>
+
+<div id="myMainnav" class="mainnav">
+    <h1>Fangzheng Liu</h1>
+
+    <h3>How to increase nRF52840 feather MTU length to more that 20 bytes in Arduino?</h3>
+
+    <p>
+        2 things need to be changed:
+        in central side, in file ble_gatt.h,
+        /** @brief Default ATT MTU, in bytes. */
+        // FZ
+        #define BLE_GATT_ATT_MTU_DEFAULT 203
+
+        at peripheral side:
+        in connected_callback:
+        connection->requestDataLengthUpdate();
+        connection->requestMtuExchange(200);
+        
+    </p>
+
+</div>
+
+</body>
+</html>
