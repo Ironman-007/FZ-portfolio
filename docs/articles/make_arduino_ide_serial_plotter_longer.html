@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>Fangzheng Liu (MIT)</title>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <meta name="viewport" content="width=1035px, initial-scale=1.0">
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+    <p><span class = "weeknum"><a href=../index.html>Home</a> </span></p>
+    <p><span class = "weeknum"><a href=../projects.html>Projects</a> </span></p>
+    <p><span class = "weeknum"><a href=../publications.html>Publications&Media</a> </span></p>
+    <p><span class = "weeknum"><a href=../teachings.html>Teachings</a> </span></p>
+    <!-- <p><span class = "weeknum"><a href=readings.html>Readings & Links</a> </span></p> -->
+    <p><span class = "weeknum"><a href=../articles.html>Articles</a> </span></p>
+    <p><span class = "weeknum"><a href=../cv.html>CV</a> </span></p>
+</div>
+
+<div id="myMainnav" class="mainnav">
+    <h1>Fangzheng Liu</h1>
+
+    <h3>How to make the serial plotter in Arduino IDE longer?</h3>
+
+    <p>
+        By default, the serial plotter in Arduino IDE only shows the last 50 data points,
+        which is not enough for monitoring data in long-term.
+        So I want to change the length to 1000.
+        Here is how to do it:
+    </p>
+
+    <p>
+        <ul>
+            <li>Go to "Arduino IDE\resources\app\node_modules\arduino-serial-plotter-webapp\build\static\js"</li>
+            <li>Find the file: "main.35ae02cb.chunk.js"</li>
+            <li>Open the file with a text editor (VSCode or Sublime Text)</li>
+            <li>Find the line: "U=Object(o.useState)(50)"</li>
+            <li>Change the number "50" to a desired number, here I changed it to 1000.</li>
+        </ul>
+    </p>
+
+    <center>
+        <img src="../images/serial_plotter_50.png" class="center" height="350px"></br>
+        <i>Serial plotter with a length of 50.</i>
+    </center>
+    <center>
+        <img src="../images/serial_plotter_1000.png" class="center" height="350px"></br>
+        <i>Serial plotter with a length of 1000.</i>
+    </center></p>
+    
+    <h3><p style="color:red;">!!! Notice: if you set the length to too long, like 1000, after a while,
+        the serial plotter will crush due to high memory usage, please set it to a reasonable number,
+        a few hundreds would be good enough.</p></h3>
+    
+    <p></p>
+    <p></p>
+
+</div>
+
+</body>
+</html>
