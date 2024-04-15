@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Fangzheng Liu (MIT)</title>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <meta name="viewport" content="width=1035px, initial-scale=1.0">
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+    <p><span class = "weeknum"><a href=../index.html>Home</a> </span></p>
+    <p><span class = "weeknum"><a href=../projects.html>Projects</a> </span></p>
+    <p><span class = "weeknum"><a href=../publications.html>Publications&Media</a> </span></p>
+    <p><span class = "weeknum"><a href=../teachings.html>Teachings</a> </span></p>
+    <!-- <p><span class = "weeknum"><a href=readings.html>Readings & Links</a> </span></p> -->
+    <p><span class = "weeknum"><a href=../articles.html>Articles</a> </span></p>
+    <p><span class = "weeknum"><a href=../cv.html>CV</a> </span></p>
+</div>
+
+<div id="myMainnav" class="mainnav">
+    <h1>Fangzheng Liu</h1>
+
+    <h3>Setup RP2040 SDK on Windows</h3>
+
+    <p>
+        The RP2040 is a cool chip and I have been using the Arduino framework in PlatformIO
+        for the development. Since I'm not that happy with Arduino (it might do something without telling me),
+        and the RP2040 datasheet really describes the development code in details, so I want to
+        use SDK to do the development. This article is about how to set up the RP2040 SDK on Windows.
+    </p>
+    <ul>
+        <li> Download the <a href="https://www.raspberrypi.com/news/raspberry-pi-pico-windows-installer/">Raspberry Pi Pico Windows Installer</a> and install it.</li>
+        <li> Make your own project and copy some files to your project folder. <a href="https://github.com/raspberrypi/pico-setup-windows/blob/master/docs/tutorial.md#creating-a-new-project">[Link]</a> </li>
+        <li> Build the project (open the folder with Pico-VSCode). </li>
+        <li> Make a rpiprobe with XIAO RP2040 with <a href="https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html#debugging-using-another-raspberry-pi-pico"> official UF2 file</a>. </li>
+        <li> Connect the probe with the pico, and use the Pico-Debug (Cortex-Debug) option to upload and debug the file.</li>
+        <li> 
+            One tip to remember, if you are using the USB serialport, remember to add these two lines in the CmakeList.txt file:
+            <b><i>pico_enable_stdio_usb(main 1) </br>
+            pico_enable_stdio_uart(main 0)</i></b></br>
+        </li>
+    </ul>
+    <p></p>
+    <p></p>
+
+</div>
+
+</body>
+</html>
