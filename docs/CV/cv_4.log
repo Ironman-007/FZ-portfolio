@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.28)  21 OCT 2024 20:26
-=======
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.20)  2 SEP 2024 20:34
->>>>>>> 2bb780d25a9d962d8c6b5cb2e2573581f969bc2b
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.28)  21 OCT 2024 20:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -255,40 +251,22 @@ Overfull \hbox (30.0pt too wide) in paragraph at lines 31--31
 
 [1
 
-<<<<<<< HEAD
 {c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] (c:/DATA/Documents/Lab/github/FZ-portfolio/docs/CV/cv_4.aux)
-=======
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] (./cv_4.aux)
->>>>>>> 2bb780d25a9d962d8c6b5cb2e2573581f969bc2b
 Package rerunfilecheck Info: File `cv_4.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
  5271 strings out of 479485
  81785 string characters out of 5875915
  395782 words of memory out of 5000000
  22217 multiletter control sequences out of 15000+600000
  539087 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,4n,85p,713b,450s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 80i,4n,85p,713b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on c:/DATA/Documents/Lab/github/FZ-portfolio/docs/CV/cv_4.pdf (4 pages, 86577 bytes).
+Output written on c:/DATA/Documents/Lab/github/FZ-portfolio/docs/CV/cv_4.pdf (4 pages, 86780 bytes).
 PDF statistics:
  50 PDF objects out of 1000 (max. 8388607)
-=======
- 8264 strings out of 478268
- 130759 string characters out of 5846346
- 438422 words of memory out of 5000000
- 26405 multiletter control sequences out of 15000+600000
- 473258 words of font info for 41 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 70i,5n,76p,725b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on cv_4.pdf (4 pages, 90540 bytes).
-PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
->>>>>>> 2bb780d25a9d962d8c6b5cb2e2573581f969bc2b
  38 compressed objects within 1 object stream
  5 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
