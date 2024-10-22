@@ -1,0 +1,57 @@
+<html>
+<head>
+  <title>Fangzheng Liu (MIT)</title>
+  <link rel="stylesheet" href="../stylesheets/style.css">
+  <meta name="viewport" content="width=1035px, initial-scale=1.0">
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <p><span class = "weeknum"><a href=../index.html>Home</a> </span></p>
+  <p><span class = "weeknum"><a href=../projects.html>Projects</a> </span></p>
+  <p><span class = "weeknum"><a href=../publications.html>Publications&Media</a> </span></p>
+  <p><span class = "weeknum"><a href=../teachings.html>Teachings</a> </span></p>
+  <!-- <p><span class = "weeknum"><a href=readings.html>Readings & Links</a> </span></p> -->
+  <p><span class = "weeknum"><a href=../articles.html>Articles</a> </span></p>
+  <p><span class = "weeknum"><a href=../cv.html>CV</a> </span></p>
+</div>
+
+<div id="myMainnav" class="mainnav">
+  <h1>Fangzheng Liu</h1>
+
+  <h3>Develop RP2040 with PicoSDK in PlatformIO</h3>
+
+  <p>
+    I love VSCode and PlatformIO and finally found a way to develop the RP2040 with PicoSDK.
+    Before, using Arduino framework seems to be the only option for PLatformIO to develop firmware
+    for RP2040. But now, with the PicoSDK, we can use the official SDK to develop the baremetal firmware
+    which is much better since i have all control of all the low-level hardware.
+    One thing I'm not sure is if it allows PIO, which is a cool weapon for RP2040.
+  </p>
+
+  <p>
+    <p>
+      This is the platformio.ini used:
+      <pre class = "codebox">
+        [env:stable]
+        platform = https://github.com/maxgerhardt/platform-raspberrypi.git
+        board = pico
+        framework = picosdk
+        board_build.core = earlephilhower
+
+        debug_tool = jlink
+        upload_protocol = jlink
+      </pre>
+
+      Here is a useful link: <a href=" https://github.com/earlephilhower/arduino-pico/blob/master/docs/platformio.rst">
+      Using this core with PlatformIO</a>
+
+      Also it's fine to use Arduino framework, since it's based on the PicoSDK,
+      and it supports the PIO.
+    </p>
+  </p>
+
+</div>
+
+</body>
+</html>
