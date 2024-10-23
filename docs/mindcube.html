@@ -1,0 +1,148 @@
+<html>
+<head>
+    <title>Fangzheng Liu (MIT)</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <meta name="viewport" content="width=1035px, initial-scale=1.0">
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+    <p><span class = "weeknum"><a href=index.html>Home</a> </span></p>
+    <p><span class = "weeknum"><a href=projects.html>Projects</a> </span></p>
+    <p><span class = "weeknum"><a href=publications.html>Publications&Media</a> </span></p>
+    <p><span class = "weeknum"><a href=teachings.html>Teachings</a> </span></p>
+    <!-- <p><span class = "weeknum"><a href=readings.html>Readings & Links</a> </span></p> -->
+    <p><span class = "weeknum"><a href=articles.html>Articles</a> </span></p>
+    <p><span class = "weeknum"><a href=cv.html>CV</a> </span></p>
+</div>
+
+<div id="myMainnav" class="mainnav">
+    <h2>MindCube: an Interactive Device for Gauging Emotions</h2>
+    <h4><i>Liu, F., Haddad, D.D. and Paradiso, J., 2024, October.
+      MindCube: an Interactive Device for Gauging Emotions.
+      In Adjunct Proceedings of the 37th Annual ACM Symposium on User Interface Software and Technology (pp. 1-2).
+      [<a href="https://dl.acm.org/doi/abs/10.1145/3672539.3686771">PDF</a>]</i></h4>
+
+    <p>
+      The different ways people play with a fidget cube can reveal their emotions.
+    </p>
+
+    <p>
+      <center>
+          <img src="./images/mindcube.png" class="center" width = "40%"></img>
+          <br><br>
+          <figcaption style="font-size:16px;"><i> A MindCube in hand
+          </i></figcaption>
+      </center>
+    </p>
+
+    <p>
+      The MindCube is an interactive device designed for studying emotions.
+      Resembling a fidget cube toy commonly used for stress and anxiety relief,
+      the MindCube features a compact cubic shape (3.3 cm x 3.3 cm x 3.3 cm), making it small,
+      easy to hold, and ideal for playful interaction.
+      Like a fidget cube toy, each side of the MindCube is equipped with various interactive inputs,
+      including tactile buttons, a small rolling disk, and a joystick.
+      Additionally, the device is fitted with a 9-DoF IMU (Inertial Measurement Unit)
+      to measure real-time orientation when held by the user.
+      Furthermore, the MindCube includes a linear vibration motor
+      to provide haptic feedback to enhance the interactive experience.
+    </p>
+
+    <p>
+      <center>
+        <b style="color:red;"><i>Design</i></b>
+      </center>
+    </p>
+
+    <p>
+      A MindCube is composed of three PCBs (printed circuit boards) - main control board,
+      connector board, and button board - a joystick, a TTC encoder, a linear vibration motor,
+      and a 100mAh LiPo battery.
+    </p>
+
+    <p>
+      <center>
+          <img src="./images/mindcube_internal.png" class="center" width = "80%">
+          <br><br>
+          <figcaption style="font-size:16px;"><i>Internal structure of a MindCube.</i></figcaption>
+      </center>
+    </p>
+
+    <p>
+      The three PCBs are responsible for different functions.
+      The main control board is responsible for both control and communication functions.
+      It is equipped with a BC832 BLE SoC (system on chip), a 9-DoF IMU (ICM20948),
+      and connectors for interfacing with other boards and modules.
+      The button board features four tactile buttons with debounce circuits to ensure clean signal
+      edges when the buttons are pressed and released.
+      Positioned between the main control board and the button board,
+      the connector board serves as a relay, linking the buttons to the main control board.
+      Additionally, it includes a battery charger circuit.
+      An NMOS-FET is used to drive the linear vibration motor via PWM (pulse width modulation).
+      On the back of the connector board are a charging indicator LED and a programming port,
+      providing visual feedback and ease of programming.
+    </p>
+
+    <p>
+      <center>
+          <img src="./images/mindcubesystem_diagram.png" class="center" width = "80%">
+          <br><br>
+          <figcaption style="font-size:16px;"><i>MindCube system diagram.</i></figcaption>
+      </center>
+    </p>
+
+    <p>
+      The BC832 samples all sensor data at a frequency of 50Hz,
+      packages the collected data, and transmits it to a computer via BLE.
+      A custom-designed program running on the computer logs this data,
+      facilitating further processing, model training, and analysis.
+    </p>
+
+    <p>
+      <center>
+        <b style="color:blue;"><i>Potential Applications</i></b>
+      </center>
+    </p>
+
+    <p>
+      The MindCube is a compact, playful, and interactive cubic device that fits comfortably in one hand.
+      Equipped with multiple input devices, the MindCube captures detailed data on how individuals interact
+      with it across various emotional states.
+      One potential application is as an interactive tool for collecting data during repetitive interactions with users.
+      This allows for the study of user behavior and interaction patterns in different emotional states.
+      By incorporating periodic short surveys, we can gather additional context to train efficient neural network models,
+      enabling real-time emotion state measurements.
+      This combination of interaction data and survey responses helps in building robust models for assessing emotional states.
+      Additionally, the MindCube is equipped with a linear vibration motor that can provide haptic feedback,
+      offering real-time alerts or interferences when necessary.
+      This feature enhances its utility as a tool for real-time emotional monitoring and intervention.
+    </p>
+
+    <p>
+      <center>
+        <img src="./images/mindcube_applications.png" class="center" width = "80%">
+        <br><br>
+        <figcaption style="font-size:16px;"><i>Potential applications of the MindCube.</i></figcaption>
+      </center>
+    </p>
+
+    <p>
+      The MindCube is a versatile platform that can also function as a compact multimodal controller,
+      such as a music controller.
+      Sensor readings from the MindCube can be converted into MIDI messages and streamed to software like VCV-RACK,
+      enabling various mappings to create different musical effects and compositions.
+      This capability allows the MindCube to serve not only as an interactive data collection tool
+      but also as a creative interface for music production.
+    </p>
+  <p>
+    <center>
+      <iframe width= "80%" height="442" frameborder="0" controls muted allowfullscreen
+      src="https://www.youtube.com/watch?v=VguMly8r6Sk">
+      </iframe>
+      <br><br>
+      <figcaption style="font-size:16px;"><i>The MindCube can collect real time data from all the inputs.</i></figcaption>
+    </center>
+  </p>
+
+</div>

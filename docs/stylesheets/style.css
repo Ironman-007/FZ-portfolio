@@ -99,6 +99,8 @@ th {
 
 .info {
   margin-left: 32%;
+  margin-right: 3%;
+  text-align: justify;
   /* float:left; */
 }
 
