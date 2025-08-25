@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1751985331 "/Users/liufangzheng/Documents/Lab/github/FZ-portfolio/docs/CV/cv_4.tex" "cv_4.pdf" "cv_4" 1751985332
-  "/Users/liufangzheng/Documents/Lab/github/FZ-portfolio/docs/CV/cv_4.tex" 1751985331 14776 b3e4c32e853dab70f8af35ffbd88d8b6 ""
+["pdflatex"] 1756157923 "/Users/liufangzheng/Documents/Lab/github/FZ-portfolio/docs/CV/cv_4.tex" "cv_4.pdf" "cv_4" 1756157924
+  "/Users/liufangzheng/Documents/Lab/github/FZ-portfolio/docs/CV/cv_4.tex" 1756157923 17398 7c567efa00c246c5a8041debad599080 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -20,6 +20,7 @@
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1248133631 37944 359e864bd06cde3b1cf57bb20757fb06 ""
+  "/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty" 1576016050 33961 6b5c75130e435b2bfdb9f480a09a39f9 ""
@@ -44,6 +45,8 @@
   "/usr/local/texlive/2022/texmf-dist/tex/latex/base/size11.clo" 1636758526 8464 74db94825c407b51399ca17d9bd38a3d ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1601931149 46845 3b58f70c6e861a13d927bff09d35ecbc ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/geometry/geometry.sty" 1578002852 41601 9cf6c5257b1bc7af01a58859749dd37a ""
+  "/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
+  "/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-def/pdftex.def" 1601931164 19103 48d29b6e2a64cb717117ef65f107b404 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/keyval.sty" 1622581934 2671 4de6781a30211fe0ea4c672e4a2a8166 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/hycolor/hycolor.sty" 1580250785 17914 4c28a13fc3d975e6e81c9bea1d697276 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hpdftex.def" 1645564115 49029 7c9e5115b2217efbeb7828ac0d1bf1a0 ""
@@ -59,13 +62,14 @@
   "/usr/local/texlive/2022/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1575674187 9715 b051d5b493d9fe5f4bc251462d039e5f ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/tools/array.sty" 1636758526 12694 6c23725d50ab9d1e2d3ce482c58ffcf3 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/url/url.sty" 1388531844 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
+  "/usr/local/texlive/2022/texmf-dist/tex/latex/xcolor/xcolor.sty" 1635798903 56029 3f7889dab51d620aa43177c391b7b190 ""
   "/usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf" 1646502317 40171 cdab547de63d26590bebb3baff566530 ""
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1671589476 2826455 afff7c65ac20d293ad89bc77544ce6c6 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "cv_4.aux" 1751985332 686 1021e496efe4cd3ab536fd12e6d22f30 "pdflatex"
+  "cv_4.aux" 1756157924 686 1021e496efe4cd3ab536fd12e6d22f30 "pdflatex"
   "cv_4.out" 0 -1 0 "pdflatex"
-  "cv_4.tex" 1751985331 14776 b3e4c32e853dab70f8af35ffbd88d8b6 ""
+  "cv_4.tex" 1756157923 17398 7c567efa00c246c5a8041debad599080 ""
   "resume.cls" 1716477552 5101 1a6a777ab8a4f262a601efb729cda314 ""
   (generated)
   "cv_4.aux"
