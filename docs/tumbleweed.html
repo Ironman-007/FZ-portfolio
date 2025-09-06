@@ -1,0 +1,113 @@
+<html>
+<head>
+    <title>Fangzheng Liu (MIT)</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <meta name="viewport" content="width=1035px, initial-scale=1.0">
+</head>
+
+<style>
+    table, th, td {
+      border:1px solid black;
+    }
+</style>
+
+<body>
+
+<div id="mySidenav" class="sidenav">
+    <p><span class = "weeknum"><a href=index.html>Home</a> </span></p>
+    <p><span class = "weeknum"><a href=projects.html>Projects</a> </span></p>
+    <p><span class = "weeknum"><a href=publications.html>Publications&Media</a> </span></p>
+    <p><span class = "weeknum"><a href=teachings.html>Teachings</a> </span></p>
+    <!-- <p><span class = "weeknum"><a href=readings.html>Readings & Links</a> </span></p> -->
+    <p><span class = "weeknum"><a href=articles.html>Articles</a> </span></p>
+    <p><span class = "weeknum"><a href=cv.html>CV</a> </span></p>
+</div>
+
+<div id="myMainnav" class="mainnav">
+    <h2>Lunar Tumbleweed</h2>
+    
+    <center><h3><i>Overview</i></h3></center>
+    <p>
+        For system working on the Moon, to get mobility, usually we need high-power consuming actuators,
+        such as motors, to drive the system moving.
+        However, these actuators consume a lot of power, which is very limited on the Moon.
+        A low-power consuming mobility method is needed for small systems working on the Moon.
+    </p>
+        <a style="color:red;"> How about more extreme, a "power-free" mobility?</a>
+    </p>
+
+    <p>
+        The lunar Tumbleweed is a concept of "power-free" mobility for small wireless sensor nodes working on the Moon.
+        The idea is inspired by the tumbleweed plant on the Earth.
+        Unfortunately, there is no wind on the Moon,
+        however, there is the sunlight that can be used to generate the mobility.
+        The figure below shows how the lunar tumbleweed works:
+    </p>
+
+    <center>
+        <img src="./images/tumbleweed.png" class="center" height="300px">
+        <figcaption><i> Lunar tumbleweed mobility mechanism:<br>
+            <b>(a)</b> a Lunar tumbleweed sensor node is deployed on the lunar surface,
+            one side is in sunshine and another side is in shadow.
+            This naturally generates a temperature gradient across the device's surface
+            <b>(b)</b> A special actuator with a bistable beam structure is used to actuate the device.
+            The actuator bends outward when it is heated by the sunshine
+            <b>(c-d)</b> The actuator pushes the node to roll
+            <b>(e)</b> After rolling, the side with sunshine loses the direct irradiance,
+            and the side that doesn't have the sunshine gets the direct irradiance and actuates the device to roll again.
+            This process repeats and the device rolls on the lunar surface like a tumbleweed plant on the Earth.
+        </i></figcaption>
+    </center></p>
+
+        This mobility method doesn't need any electrical power supply (well it still needs nuclear fusion energy from the Sun. :p),
+        and is very suitable for small sensor nodes working on the Moon where harvesting energy is challenging due 
+        to the dusty environment there degrades the performance of solar panels.
+    </p>
+
+    <center><h3><i>Actuator design</i></h3></center>
+    <p>
+        A special actuator is designed with a bistable beam structure.
+        The actuator is driven by a custom-made shape memory alloy (SMA) spring.
+        When the SMA spring is heated, it contracts and pulls the bistable beam to bend outward.
+        When the SMA spring cools down, the bistable beam snaps back to its original position.
+        The bistable beam structure is used to amplify the small contraction of the SMA spring.
+        The figure below shows the design of the actuator:
+    </p>
+
+    <center>
+        <img src="./images/tumbleweed_act.png" height="300px">
+        <figcaption><i> Actuator design.</i></figcaption>
+    </center></p>
+
+    <p>
+        The figure belows shows the actuator prototype and its performance:
+    </p>
+
+    <center>
+        <img src="./images/tumbleweed_work.png" height="360px">
+        <figcaption><i> Actuator prototype works when heated up.</i></figcaption>
+    </center></p>
+
+    <center><h3><i>Experiments</i></h3></center>
+    <p>
+        A preliminary test of the actuator is conducted.
+        A solar light illuminator is used to provide sunlight-like irradiance to the actuator.
+        A reflector is used to change the direction of the light to simulate the
+        irradiance incident angle in polar regions on the Moon.
+        The video below shows the test setup and the test result:
+    </p>
+
+    <center>
+        <video width="600" controls>
+            <source src="./images/Tumbleweed.mp4" type="video/mp4">
+        </video>
+        <figcaption><i> Tumbleweed rolls.</i></figcaption>
+    </center>
+
+    <p>
+        More tests results and the paper is under preparation and will be updated here soon.
+    </p>
+
+</div>
+
+
