@@ -1,64 +1,64 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.20)  25 AUG 2025 17:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.28)  5 SEP 2025 22:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/liufangzheng/Documents/Lab/github/FZ-portfolio/docs/CV/cv_4.tex
-(/Users/liufangzheng/Documents/Lab/github/FZ-portfolio/docs/CV/cv_4.tex
-LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-02-24> (./resume.cls
+**c:/Users/l1534/OneDrive/Desktop/FZ-portfolio-main/docs/CV/cv_4.tex
+(c:/Users/l1534/OneDrive/Desktop/FZ-portfolio-main/docs/CV/cv_4.tex
+LaTeX2e <2020-10-01> patch level 2
+L3 programming layer <2020-10-27> xparse <2020-03-03> (c:/Users/l1534/OneDrive/Desktop/FZ-portfolio-main/docs/CV/resume.cls
 Document Class: resume 2010/07/10 v0.9 Resume class
-(/usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/local/texlive/2022/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+(c:/texlive/2020/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(c:/texlive/2020/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
-\c@part=\count185
-\c@section=\count186
-\c@subsection=\count187
-\c@subsubsection=\count188
-\c@paragraph=\count189
-\c@subparagraph=\count190
-\c@figure=\count191
-\c@table=\count192
+\c@part=\count175
+\c@section=\count176
+\c@subsection=\count177
+\c@subsubsection=\count178
+\c@paragraph=\count179
+\c@subparagraph=\count180
+\c@figure=\count181
+\c@table=\count182
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-) (/usr/local/texlive/2022/texmf-dist/tex/latex/parskip/parskip.sty
-Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
- (/usr/local/texlive/2022/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2020-06-15 v2.0f non-zero parskip adjustments
+ (c:/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
- (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/keyval.sty
+ (c:/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks16
-) (/usr/local/texlive/2022/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+\KV@toks@=\toks15
+) (c:/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-) (/usr/local/texlive/2022/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+) (c:/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-)) (/usr/local/texlive/2022/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+)) (c:/texlive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count193
-)) (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/array.sty
-Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\etb@tempcnta=\count183
+)) (c:/texlive/2020/texmf-dist/tex/latex/tools/array.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
 \col@sep=\dimen139
-\ar@mcellbox=\box50
+\ar@mcellbox=\box47
 \extrarowheight=\dimen140
-\NC@list=\toks17
+\NC@list=\toks16
 \extratabsurround=\skip49
 \backup@length=\skip50
-\ar@cellbox=\box51
-) (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
-)) (/usr/local/texlive/2022/texmf-dist/tex/latex/geometry/geometry.sty
+\ar@cellbox=\box48
+) (c:/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)) (c:/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (/usr/local/texlive/2022/texmf-dist/tex/generic/iftex/ifvtex.sty
+ (c:/texlive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (/usr/local/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
+ (c:/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-\Gm@cnth=\count194
-\Gm@cntv=\count195
-\c@Gm@tempcnt=\count196
+\Gm@cnth=\count184
+\Gm@cntv=\count185
+\c@Gm@tempcnt=\count186
 \Gm@bindingoffset=\dimen141
 \Gm@wd@mp=\dimen142
 \Gm@odd@mp=\dimen143
@@ -67,26 +67,26 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layoutheight=\dimen146
 \Gm@layouthoffset=\dimen147
 \Gm@layoutvoffset=\dimen148
-\Gm@dimlist=\toks18
-) (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2022-02-21 v7.00n Hypertext links for LaTeX
- (/usr/local/texlive/2022/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+\Gm@dimlist=\toks17
+) (c:/texlive/2020/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+ (c:/texlive/2020/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (/usr/local/texlive/2022/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+ (c:/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) (/usr/local/texlive/2022/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+) (c:/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (/usr/local/texlive/2022/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+) (c:/texlive/2020/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-) (/usr/local/texlive/2022/texmf-dist/tex/latex/hycolor/hycolor.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (/usr/local/texlive/2022/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-) (/usr/local/texlive/2022/texmf-dist/tex/latex/auxhook/auxhook.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 
 
@@ -95,102 +95,97 @@ Package auxhook Warning: Cannot patch \document,
 
 )
 \@linkdim=\dimen149
-\Hy@linkcounter=\count197
-\Hy@pagecounter=\count198
- (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2022-02-21 v7.00n Hyperref: PDFDocEncoding definition (HO)
+\Hy@linkcounter=\count187
+\Hy@pagecounter=\count188
+ (c:/texlive/2020/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (/usr/local/texlive/2022/texmf-dist/tex/generic/intcalc/intcalc.sty
+) (c:/texlive/2020/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-) (/usr/local/texlive/2022/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+) (c:/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count199
- (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2022-02-21 v7.00n Hyperref: PDF Unicode definition (HO)
-Now handling font encoding PU ...
-... no UTF-8 mapping file for font encoding PU
-)
-Package hyperref Info: Hyper figures OFF on input line 4137.
-Package hyperref Info: Link nesting OFF on input line 4142.
-Package hyperref Info: Hyper index ON on input line 4145.
-Package hyperref Info: Plain pages OFF on input line 4152.
-Package hyperref Info: Backreferencing OFF on input line 4157.
+\Hy@SavedSpaceFactor=\count189
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4390.
-\c@Hy@tempcnt=\count266
- (/usr/local/texlive/2022/texmf-dist/tex/latex/url/url.sty
+Package hyperref Info: Bookmarks ON on input line 4717.
+\c@Hy@tempcnt=\count190
+ (c:/texlive/2020/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4749.
+LaTeX Info: Redefining \url on input line 5076.
 \XeTeXLinkMargin=\dimen150
- (/usr/local/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty
+ (c:/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (/usr/local/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+ (c:/texlive/2020/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count267
+\Fld@menulength=\count191
 \Field@Width=\dimen151
 \Fld@charsize=\dimen152
-Package hyperref Info: Hyper figures OFF on input line 6027.
-Package hyperref Info: Link nesting OFF on input line 6032.
-Package hyperref Info: Hyper index ON on input line 6035.
-Package hyperref Info: backreferencing OFF on input line 6042.
-Package hyperref Info: Link coloring OFF on input line 6047.
-Package hyperref Info: Link coloring with OCG OFF on input line 6052.
-Package hyperref Info: PDF/A mode OFF on input line 6057.
-LaTeX Info: Redefining \ref on input line 6097.
-LaTeX Info: Redefining \pageref on input line 6101.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
-package with kernel methods
-)
-\Hy@abspage=\count268
-\c@Item=\count269
-\c@Hfootnote=\count270
-)
-Package hyperref Info: Driver (autodetected): hpdftex.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2022-02-21 v7.00n Hyperref driver for pdfTeX
- (/usr/local/texlive/2022/texmf-dist/tex/latex/base/atveryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
+ (c:/texlive/2020/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi package
 with kernel methods
 )
-\Fld@listcount=\count271
-\c@bookmark@seq@number=\count272
- (/usr/local/texlive/2022/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+\Hy@abspage=\count192
+\c@Item=\count193
+\c@Hfootnote=\count194
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (c:/texlive/2020/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
+ (c:/texlive/2020/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery package
+with kernel methods
+)
+\Fld@listcount=\count195
+\c@bookmark@seq@number=\count196
+ (c:/texlive/2020/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
- (/usr/local/texlive/2022/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+ (c:/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
 \Hy@SectionHShift=\skip51
-) (/usr/local/texlive/2022/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
- (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg
+) (c:/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 227.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-def/pdftex.def
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+ (c:/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 )
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
-Package xcolor Info: Model `RGB' extended on input line 1368.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
-) (/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count273
-\l__pdf_internal_box=\box52
-) (./cv_4.aux)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count197
+\l__pdf_internal_box=\box49
+) (c:/Users/l1534/OneDrive/Desktop/FZ-portfolio-main/docs/CV/cv_4.aux)
 \openout1 = `cv_4.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -208,8 +203,6 @@ LaTeX Font Info:    ... okay on input line 32.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
 
 *geometry* driver: auto-detecting
@@ -247,35 +240,35 @@ LaTeX Font Info:    ... okay on input line 32.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 32.
-(/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
- (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
+(c:/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+ (c:/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (/usr/local/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+) (c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count274
+\c@section@level=\count198
 )
 LaTeX Info: Redefining \ref on input line 32.
 LaTeX Info: Redefining \pageref on input line 32.
 LaTeX Info: Redefining \nameref on input line 32.
- (./cv_4.out) (./cv_4.out)
+ (c:/Users/l1534/OneDrive/Desktop/FZ-portfolio-main/docs/CV/cv_4.out) (c:/Users/l1534/OneDrive/Desktop/FZ-portfolio-main/docs/CV/cv_4.out)
 \@outlinefile=\write3
 \openout3 = `cv_4.out'.
 
- (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count275
+\scratchcounter=\count199
 \scratchdimen=\dimen153
-\scratchbox=\box53
-\nofMPsegments=\count276
-\nofMParguments=\count277
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count278
+\scratchbox=\box50
+\nofMPsegments=\count266
+\nofMParguments=\count267
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count268
 \MPscratchDim=\dimen154
-\MPnumerator=\count279
-\makeMPintoPDFobject=\count280
-\everyMPtoPDFconversion=\toks20
+\MPnumerator=\count269
+\makeMPintoPDFobject=\count270
+\everyMPtoPDFconversion=\toks19
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 32.
@@ -290,22 +283,22 @@ Overfull \hbox (30.0pt too wide) in paragraph at lines 32--32
 
 [1
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] (./cv_4.aux)
+{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] (c:/Users/l1534/OneDrive/Desktop/FZ-portfolio-main/docs/CV/cv_4.aux)
 Package rerunfilecheck Info: File `cv_4.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 9189 strings out of 478268
- 142498 string characters out of 5846346
- 456741 words of memory out of 5000000
- 27314 multiletter control sequences out of 15000+600000
- 473258 words of font info for 41 fonts, out of 8000000 for 9000
+ 6183 strings out of 479485
+ 93092 string characters out of 5875915
+ 411794 words of memory out of 5000000
+ 23113 multiletter control sequences out of 15000+600000
+ 539087 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,5n,76p,725b,458s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on cv_4.pdf (4 pages, 97143 bytes).
+ 80i,5n,85p,721b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on c:/Users/l1534/OneDrive/Desktop/FZ-portfolio-main/docs/CV/cv_4.pdf (4 pages, 93116 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
+ 60 PDF objects out of 1000 (max. 8388607)
  48 compressed objects within 1 object stream
  5 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
