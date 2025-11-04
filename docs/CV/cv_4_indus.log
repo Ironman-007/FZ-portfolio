@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.12)  4 NOV 2025 09:30
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.12)  4 NOV 2025 09:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/DATA/Documents/Lab/github/FZ-portfolio/docs/CV/cv_4.tex
-(c:/DATA/Documents/Lab/github/FZ-portfolio/docs/CV/cv_4.tex
+**c:/DATA/Documents/Lab/github/FZ-portfolio/docs/CV/cv_4_indus.tex
+(c:/DATA/Documents/Lab/github/FZ-portfolio/docs/CV/cv_4_indus.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
 (resume.cls
@@ -179,8 +179,8 @@ File: l3backend-xetex.def 2025-06-09 L3 backend support: XeTeX
 \g__graphics_track_int=\count296
 \g__pdfannot_backend_int=\count297
 \g__pdfannot_backend_link_int=\count298
-) (cv_4.aux)
-\openout1 = `cv_4.aux'.
+) (cv_4_indus.aux)
+\openout1 = `cv_4_indus.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
@@ -238,9 +238,9 @@ LaTeX Font Info:    ... okay on input line 32.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 32.
-(cv_4.out) (cv_4.out)
+(cv_4_indus.out) (cv_4_indus.out)
 \@outlinefile=\write3
-\openout3 = `cv_4.out'.
+\openout3 = `cv_4_indus.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 32.
@@ -265,21 +265,21 @@ Overfull \hbox (30.0pt too wide) in paragraph at lines 32--32
 
 [4]
 
-[5] (cv_4.aux)
+[5] (cv_4_indus.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
-Package rerunfilecheck Info: File `cv_4.out' has not changed.
+Package rerunfilecheck Info: File `cv_4_indus.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  8840 strings out of 403246
- 133958 string characters out of 5463471
- 570763 words of memory out of 5000000
+ 134078 string characters out of 5463471
+ 570793 words of memory out of 5000000
  37230 multiletter control sequences out of 15000+600000
  629972 words of font info for 56 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 72i,5n,79p,713b,482s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,5n,79p,719b,482s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on cv_4.xdv (5 pages, 125352 bytes).
+Output written on cv_4_indus.xdv (5 pages, 124368 bytes).
