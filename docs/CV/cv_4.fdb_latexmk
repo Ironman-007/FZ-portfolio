@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1762833191.41432 "cv_4.xdv" "cv_4.pdf" "cv_4" 1762833191.91556 0
-  "cv_4.xdv" 1762833191 135640 eb33e0f0c8b8df217327b9afe728e4e2 "xelatex"
+["xdvipdfmx"] 1762833874.86726 "cv_4.xdv" "cv_4.pdf" "cv_4" 1762833875.24616 0
+  "cv_4.xdv" 1762833874 132412 78c75fd04ebbccaa3b32668db0b45a8e "xelatex"
   (generated)
   "cv_4.pdf"
   (rewritten before read)
-["xelatex"] 1762833190.57317 "c:/DATA/Documents/Lab/github/FZ-portfolio/docs/CV/cv_4.tex" "cv_4.xdv" "cv_4" 1762833191.91284 0
+["xelatex"] 1762833873.9068 "c:/DATA/Documents/Lab/github/FZ-portfolio/docs/CV/cv_4.tex" "cv_4.xdv" "cv_4" 1762833875.2431 0
   "C:/DATA/Software/Latex/Software/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136790254 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "C:/DATA/Software/Latex/Software/fonts/tfm/public/cm/cmmi10.tfm" 1136765053 1528 abec98dbc43e172678c11b3b9031252a ""
   "C:/DATA/Software/Latex/Software/fonts/tfm/public/cm/cmmi6.tfm" 1136765053 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -54,10 +54,10 @@
   "C:/DATA/Software/Latex/Software/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/DATA/Software/Latex/Software/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/l1534/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1760320254 27037130 4853df72f320b88f2b5b2844c3d65841 ""
-  "c:/DATA/Documents/Lab/github/FZ-portfolio/docs/CV/cv_4.tex" 1762833186 21450 d195cec7b488719b60118ee729c29ead ""
-  "cv_4.aux" 1762833191 128 be90ee6c6a08a3524cd08599affc8a47 "xelatex"
-  "cv_4.out" 1762833191 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
-  "cv_4.tex" 1762833186 21450 d195cec7b488719b60118ee729c29ead ""
+  "c:/DATA/Documents/Lab/github/FZ-portfolio/docs/CV/cv_4.tex" 1762833873 21072 ceca8b63d6ba712fc46030bd1eea6002 ""
+  "cv_4.aux" 1762833874 128 be90ee6c6a08a3524cd08599affc8a47 "xelatex"
+  "cv_4.out" 1762833874 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+  "cv_4.tex" 1762833873 21072 ceca8b63d6ba712fc46030bd1eea6002 ""
   "resume.cls" 1760077242 5101 1a6a777ab8a4f262a601efb729cda314 ""
   (generated)
   "cv_4.aux"
