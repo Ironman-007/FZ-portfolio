@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1762278267.91466 "cv_4_indus.xdv" "cv_4_indus.pdf" "cv_4_indus" 1762278268.49242 0
-  "cv_4_indus.xdv" 1762278267 124368 078fb4e5667d0b7c4675261a6711b4f2 "xelatex"
+["xdvipdfmx"] 1762562395.71959 "cv_4_indus.xdv" "cv_4_indus.pdf" "cv_4_indus" 1762562396.14478 0
+  "cv_4_indus.xdv" 1762562395 138696 098c6b0777d7be2e4617295a126eb696 "xelatex"
   (generated)
   "cv_4_indus.pdf"
   (rewritten before read)
-["xelatex"] 1762278266.46534 "c:/DATA/Documents/Lab/github/FZ-portfolio/docs/CV/cv_4_indus.tex" "cv_4_indus.xdv" "cv_4_indus" 1762278268.48664 0
+["xelatex"] 1762562394.77502 "c:/DATA/Documents/Lab/github/FZ-portfolio/docs/CV/cv_4_indus.tex" "cv_4_indus.xdv" "cv_4_indus" 1762562396.14163 0
   "C:/DATA/Software/Latex/Software/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136790254 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "C:/DATA/Software/Latex/Software/fonts/tfm/public/cm/cmmi10.tfm" 1136765053 1528 abec98dbc43e172678c11b3b9031252a ""
   "C:/DATA/Software/Latex/Software/fonts/tfm/public/cm/cmmi6.tfm" 1136765053 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -54,10 +54,10 @@
   "C:/DATA/Software/Latex/Software/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/DATA/Software/Latex/Software/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/l1534/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1760320254 27037130 4853df72f320b88f2b5b2844c3d65841 ""
-  "c:/DATA/Documents/Lab/github/FZ-portfolio/docs/CV/cv_4_indus.tex" 1762278265 19220 e88e2907e27ab257b8faa27bf7cf8a50 ""
-  "cv_4_indus.aux" 1762278267 128 be90ee6c6a08a3524cd08599affc8a47 "xelatex"
-  "cv_4_indus.out" 1762278267 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
-  "cv_4_indus.tex" 1762278265 19220 e88e2907e27ab257b8faa27bf7cf8a50 ""
+  "c:/DATA/Documents/Lab/github/FZ-portfolio/docs/CV/cv_4_indus.tex" 1762562394 21103 6545106b1d2ec307c52423c671117313 ""
+  "cv_4_indus.aux" 1762562395 128 be90ee6c6a08a3524cd08599affc8a47 "xelatex"
+  "cv_4_indus.out" 1762562395 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+  "cv_4_indus.tex" 1762562394 21103 6545106b1d2ec307c52423c671117313 ""
   "resume.cls" 1760077242 5101 1a6a777ab8a4f262a601efb729cda314 ""
   (generated)
   "cv_4_indus.aux"
